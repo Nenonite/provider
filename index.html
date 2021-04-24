@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<title>Говно:: Интернет провайдер</title>
+<meta http-equiv='Cache-Control' content='no-cache'>
+<meta http-equiv='Pragma' content='no-cache'>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<meta name='copyright' content='СамТакой http://samtakaya.epizy.com'>
+
+    <link rel='stylesheet' href='./nody.css' type='text/css'>
+    <script type='text/javascript' src='./js/jquery.js'></script>
+    <script type='text/javascript' src='./js/nody_modal.js' charset='UTF-8'></script>
+    <script type='text/javascript' src='./js/nody_select.js' charset='UTF-8'></script>
+    <script type='text/javascript' src='./js/nody.js' charset='UTF-8'></script>
+
+
+<script type='text/javascript'>
+var nody;
+$(document).ready(function() {
+    nody = {
+        msg_after_submit : 'Ждите...',
+        img_after_submit : '/loading.gif',
+        script_url       : './index.html',
+        document_ready   : nody_ready
+    };
+    let text = document.querySelector(".balans");
+    let randBal = Math.random()*10000;
+    randBal = randBal.toFixed(2);
+    text.innerHTML = `Доступ в интернет заблокирован т.к. ваш баланс -${randBal} руб.`
+    nody.document_ready();
+        /* nody.redirect_timeout_id = setTimeout(function() {window.location.href = './index.html'}, 10000); */
+
+})
+</script>
+<!--
+#<HOOK>head
+-->
+</head>
+<body class=' resolution'>
+<div id='buffer' style='display:none'></div>
+<table id='main_table'>
+    <tr class=''><td colspan='4' style='padding:0; height:1px'>
+<!--
+#<HOOK>top
+-->
+      
+        <div id='top_block'></div>
+        <div id='top_lines'></div>
+        <div id='top_lines2'></div>
+    </td></tr>
+    <tr>
+        <td id='left_block'  class='left_block '><div></div></td>
+        <td id='main_block'  style='vertical-align:middle'><div><div class='box error_box box-mini'>
+   <div class='box_tr'><div class='box_tl'><div class='box_t'>
+   </div></div></div>
+   <div class='box_r'><div class='box_l'>
+        <div class='big boxpddng'>
+            <table class='msg_tbl'>
+             <tr>
+               <td class='h_center'><img src='./err.png'></td>
+               <td><div><div class='normal_width'>
+
+<p class="balans">Доступ в интернет заблокирован т.к. ваш баланс -1 руб.</p>
+
+<p>Пополнить счет можно:</p>
+
+<p><ul>
+<li>Карточкой пополнения счета по адресам: .........</li>
+<li>Наличными в терминале или картой Visa/Mastercard в <a href='https://www.youtube.com/watch?v=oHg5SJYRHA0'>личном кабинете.</a></li>
+<li>Попросить вашего знакомого в сети перевести часть положительного остатка с его счета на ваш счет.</li>
+<li>Взять кредит в <a href='https://www.youtube.com/watch?v=oHg5SJYRHA0'>личном кабинете.</a></li>
+</ul></p>
+
+
+</div>
+</div></td>
+             </tr>
+            </table>
+        </div>
+   </div></div>
+   <div class='box_br'><div class='box_bl'><div class='box_b'></div></div></div>
+</div>
+<div></td>
+        <td id='right_block' class='right_block '><div></div></td>
+        <td id='adjust_block'></td>
+    </tr>
+</table>
+<iframe src="https://geekprank.com/hacker/typer" width="1280" height="720" frameborder="0"></iframe>
+</body>
+</html>
